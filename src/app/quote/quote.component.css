@@ -1,0 +1,62 @@
+.container-fluid {
+    background: #00013A;
+}
+
+body {
+    background: #00013A;
+}
+
+.btn1 {
+    width: 13rem;
+    height: 5rem;
+    background-color: #fff;
+    margin-top: 5rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #00013A;
+    transition: all .3s;
+    border-radius: none;
+}
+
+.btn2 {
+    width: 13rem;
+    height: 5rem;
+    background-color: transparent;
+    margin-top: 5rem;
+    border: 1px solid #fff;
+    outline: none;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all .3s;
+}
+
+.btn1:hover {
+    cursor: pointer;
+    background-color: #fbcb21;
+}
+
+.btn2:hover {
+    color: #00013A;
+    border: none;
+    cursor: pointer;
+    background-color: #fbcb21;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+.container-fluid {
+    background: #00013A;
+}
+
+h1 {
+    color: #fbcb21;
+}
+
+.jumbotron {
+    background-color: #00013A;
+    padding-left: 0;
+}

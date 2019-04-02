@@ -1,0 +1,111 @@
+.container-fluid {
+    background: #00013A;
+    display: block;
+    text-align: center;
+}
+
+body {
+    background-color: #00013A;
+}
+
+button {
+    margin-left: 250px;
+}
+
+.leftSideText h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 7rem;
+    line-height: 0.9;
+    color: white;
+}
+
+.leftSideText h6 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 0.9;
+    color: white;
+}
+
+.lightText {
+    font-weight: 50;
+}
+
+.leftSideText p {
+    width: 35rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    line-height: 1.6;
+}
+
+.textYellow {
+    color: #fbcb21;
+}
+
+.rightSide {
+    border: 1px solid #fbcb21;
+    margin: 0 8rem;
+}
+
+textarea {
+    border: 1px solid white;
+}
+
+textarea {
+    border: 2px solid #fbcb21;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input {
+    border: 2px solid #fbcb21;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+
+.btn1 {
+    width: 13rem;
+    height: 5rem;
+    background-color: #fff;
+    margin-top: 5rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #00013A;
+    transition: all .3s;
+    border-radius: none;
+    display: block;
+    text-align: center;
+}
+
+.btn1:hover {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    background-color: #fbcb21;
+}
+
+form {
+    background: #00013A;
+    padding: 20px;
+    width: 100vh;
+    text-align: center;
+    display: block;
+}

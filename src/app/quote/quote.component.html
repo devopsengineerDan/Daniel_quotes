@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div style="text-align:center">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-6">
+                    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+                </div>
+                <div class="col-md-6">
+                    <h1>
+                        Quotes
+                    </h1>
+                    <ul>
+                        <div *ngFor="let quote of quotes; let i = 'index'" style="list-style: none"><br>
+                            <div style="color: #f8f8f8;" id="{{i}}" appHighlight *ngIf="quote.likes===maxCount && quote.likes>0"></div>
+                            <li style="color: #f8f8f8;">"{{quote.quoteDesc}}"</li><br><br>
+
+                            <button class="btn2" (click)="submitLike(quote)">
+                              Upvotes</button> <br>
+                            <p style="text-align:center" style="color: #f8f8f8;">{{quote.likes}}</p><br>
+                            <button class="btn2" (click)=submitUnlike(quote)>
+                              Downvotes</button><br>
+                            <p style="text-align: center" style="color: #f8f8f8;">{{quote.dislikes}}</p><br>
+
+                            <button style="margin-top: 40px;" class="btn1" (click)='toogleDetails(i)'>Details</button><br>
+                            <app-quote-details style="color: #f8f8f8;" *ngIf="quote.showDetails" [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

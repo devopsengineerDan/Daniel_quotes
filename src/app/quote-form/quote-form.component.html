@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="content m-auto d-flex">
+        <div class="leftSideText float-center col">
+            <h1>Quotes<br><span class="lightText">App</span></h1>
+        </div>
+        <div style="margin-top: 40px;" class="rightSide float-right col">
+            <form (ngSubmit)='submitQuote() ' #quoteForm='ngForm'>
+                <div class="leftSideText float-center col">
+                    <h6 style="margin-bottom: 20px;">New <span class="lightText">Quotes</span></h6>
+                </div>
+                <table>
+                    <tr>
+                        <td><label style="color: #f8f8f8;" for="name">Author</label></td>
+                        <td><input type="text" required class="form-control" id="author" [(ngModel)]='newQuote.author' name="author"></td>
+                        <br>
+                    </tr>
+                    <tr>
+                        <td><label style="color: #f8f8f8;" for="quoteDesc">Quote</label></td>
+                        <td> <textarea class="form-control" id="quoteDesc" rows="4" required [(ngModel)]='newQuote.quoteDesc' name="quoteDesc"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label style="color: #f8f8f8;" for="name">User name</label></td>
+                        <td> <input type="text" required class="form-control" id="publisher" [(ngModel)]='newQuote.publisher' name="publisher"></td>
+                    </tr>
+                    <tr>
+                        <td><label style="color: #f8f8f8;" for="complete">Date</label></td>
+                        <td><input type='date' id="complete" required></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" class="btn1">Submit</button></td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
